@@ -1,0 +1,107 @@
+// Custom.scss
+$primary: #4285f4;
+$secondary: #aa66cc;
+$success: #00c851;
+$info: #33b5e5;
+$warning: #ffbb33;
+$danger: #ff4444;
+$dark: #2e2e2e;
+$special-color: #37474f;
+$special-color-dark: #263238;
+$unique-color-dark: #1c2331;
+$pink: #e91e63;
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  background-color: #f2f2f2;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.line {
+  width: 85px;
+  height: 3px;
+  color: $pink;
+  background-color: $pink;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 4rem;
+}
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*jssor slider bullet skin 051 css*/
+.jssorb051 .i {
+  position: absolute;
+  cursor: pointer;
+}
+.jssorb051 .i .b {
+  fill: #fff;
+  fill-opacity: 0.5;
+}
+.jssorb051 .i:hover .b {
+  fill-opacity: 0.7;
+}
+.jssorb051 .iav .b {
+  fill-opacity: 1;
+}
+.jssorb051 .i.idn {
+  opacity: 0.3;
+}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.jssora051 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 360;
+  stroke-miterlimit: 10;
+}
+.jssora051:hover {
+  opacity: 0.8;
+}
+.jssora051.jssora051dn {
+  opacity: 0.5;
+}
+.jssora051.jssora051ds {
+  opacity: 0.3;
+  pointer-events: none;
+}
+#about {
+  h1 {
+    animation-name: moveInLeft;
+    animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    // animation-delay: 1s;
+  }
+  @keyframes moveInLeft {
+    0% {
+      transform: translate(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
