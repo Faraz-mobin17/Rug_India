@@ -92,7 +92,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 800ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    // animation-delay: 1s;
+    animation-delay: 1s;
   }
   @keyframes moveInLeft {
     0% {
@@ -102,6 +102,49 @@ body {
     100% {
       transform: translate(0);
       opacity: 1;
+    }
+  }
+}
+
+#about,
+#collection {
+  img {
+    transition: transform, 0.3s ease;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+#custom {
+  background: url("../img/s.svg") no-repeat top left;
+  img {
+    transition: transform, 0.3s ease;
+    &:hover {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+@media (max-width: 552px) {
+  #custom {
+    background-size: 50%;
+    .small-fz {
+      font-size: 1.7rem;
+    }
+  }
+  #collection {
+    .border-small {
+      border: 2px solid #1c2331;
+      padding: 10px;
+    }
+  }
+}
+@media (min-width: 769px) {
+  #colleciton {
+    .border-small {
+      border: none;
+      padding: 0;
     }
   }
 }

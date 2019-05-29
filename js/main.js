@@ -67,3 +67,6 @@ jssor_1_slider_init();
     $(".navbar-toggler:visible").click();
   });
 })(jQuery); // end of use strict
+
+// add class
+const border = document.querySelector(".border-small");
