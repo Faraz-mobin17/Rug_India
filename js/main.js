@@ -54,7 +54,7 @@ jssor_1_slider_init();
       .stop()
       .animate(
         {
-          scrollTop: $($anchor.attr("href")).offset().top - 50
+          scrollTop: $($anchor.attr("href")).offset().top - 20
         },
         1250,
         "easeInOutExpo"
@@ -70,3 +70,8 @@ jssor_1_slider_init();
 
 // add class
 const border = document.querySelector(".border-small");
+// scroll reveal effect
+ScrollReveal().reveal("#custom", { delay: 500 });
+ScrollReveal().reveal("#collection", { delay: 500 });
+ScrollReveal().reveal("#contact", { delay: 500 });
+ScrollReveal().reveal("section.locate", { delay: 500 });
